@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lukenya Lino — uma página feita com carinho.">
+  <title>Lukenya Lino ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <button class="sound-toggle" id="soundToggle" aria-label="Ativar música">
+    <span class="sound-icon">♪</span>
+    <span id="soundText">Som</span>
+  </button>
+
+  <main>
+    <section class="hero reveal">
+      <div class="hero-photo-wrap">
+        <div class="hero-ring"></div>
+        <img class="hero-photo" src="images/foto-2.jpeg" alt="Lukenya Lino">
+      </div>
+
+      <p class="eyebrow">uma pequena página sobre alguém especial</p>
+      <h1>Lukenya <em>Lino</em></h1>
+      <p class="hero-subtitle">bonita por fora, mas ainda mais bonita naquilo que não se vê.</p>
+
+      <a class="scroll-hint" href="#sobre">
+        <span>desliza para entrar</span>
+        <span class="arrow">↓</span>
+      </a>
+    </section>
+
+    <section class="quote-section reveal" id="sobre">
+      <div class="quote-mark">“</div>
+      <p class="big-quote">Há pessoas que chegam sem fazer barulho e, mesmo assim, deixam uma paz difícil de explicar.</p>
+      <p class="quote-author">— sobre Lukenya</p>
+    </section>
+
+    <section class="story reveal">
+      <div class="story-text">
+        <p class="section-label">01 — quem ela é</p>
+        <h2>Uma presença que <em>tranquiliza.</em></h2>
+        <p>
+          Lukenya é daquelas pessoas que não precisam de muito para serem marcantes.
+          Existe nela uma delicadeza que aparece nos pequenos detalhes: na forma como fala,
+          na maneira como se preocupa e nesse jeito quase silencioso de tentar fazer tudo dar certo.
+        </p>
+        <p>
+          É dedicada, esforçada e, mesmo quando as coisas ficam difíceis, continua a tentar.
+          Talvez nem sempre veja o quanto isso diz sobre a força que tem.
+        </p>
+      </div>
+
+      <figure class="story-photo tall">
+        <img src="images/foto-3.jpeg" alt="Lukenya no carro">
+        <figcaption>“Ela continua a tentar, mesmo quando ninguém vê.”</figcaption>
+      </figure>
+    </section>
+
+    <section class="gallery reveal">
+      <div class="section-heading">
+        <p class="section-label">02 — alguns momentos</p>
+        <h2>Pequenos pedaços de <em>ela.</em></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="card card-large">
+          <img src="images/foto-1.jpeg" alt="Lukenya na praia ao pôr do sol">
+          <span class="card-caption">onde o céu parece guardar memórias</span>
+        </figure>
+        <figure class="card">
+          <img src="images/foto-4.jpeg" alt="Lukenya em frente ao espelho">
+        </figure>
+        <figure class="card card-offset">
+          <img src="images/foto-5.jpeg" alt="Lukenya sorrindo em frente ao espelho">
+        </figure>
+      </div>
+    </section>
+
+    <section class="qualities reveal">
+      <p class="section-label">03 — aquilo que se sente</p>
+      <div class="quality-grid">
+        <article>
+          <span>01</span>
+          <h3>Dedicação</h3>
+          <p>Ela tenta. Mesmo quando é difícil, existe sempre uma vontade de fazer melhor.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Cuidado</h3>
+          <p>Tem esse jeito de querer cuidar de quem está à sua volta e ver os outros bem.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Tranquilidade</h3>
+          <p>Há qualquer coisa na voz e na presença dela que faz o mundo parecer um pouco mais calmo.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Autenticidade</h3>
+          <p>Não precisa ser perfeita para ser especial. O bonito está justamente em ser ela.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="letter reveal">
+      <div class="letter-inner">
+        <p class="section-label">04 — uma mensagem</p>
+        <h2>Para Lukenya,</h2>
+        <p>
+          Não precisas carregar o peso de corresponder a todas as expectativas.
+          Há coisas que precisam de tempo, e há relações que também aprendem a encontrar
+          o seu próprio ritmo.
+        </p>
+        <p>
+          O teu esforço já diz muito. A tua presença diz ainda mais.
+          E talvez uma das coisas mais bonitas seja aprender, juntos, a caminhar no mesmo
+          sentido sem exigir que os dois deem os mesmos passos ao mesmo tempo.
+        </p>
+        <p class="signature">com carinho, <span>♥</span></p>
+      </div>
+    </section>
+
+    <section class="final reveal">
+      <div class="final-photo">
+        <img src="images/foto-1.jpeg" alt="Lukenya na praia">
+      </div>
+      <p class="eyebrow">fim, por enquanto</p>
+      <h2>Que nunca te esqueças<br>do quanto <em>és especial.</em></h2>
+      <p class="final-line">Lukenya Lino ✦</p>
+    </section>
+  </main>
+
+  <!-- Quando tiveres um MP3, coloca-o na pasta principal com o nome "musica.mp3". -->
+  <audio id="bgMusic" loop preload="none">
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
