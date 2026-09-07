@@ -15,18 +15,21 @@ const audio = document.getElementById("bgMusic");
 const toggle = document.getElementById("soundToggle");
 const text = document.getElementById("soundText");
 
-toggle.addEventListener("click", async () => {
-  try {
-    if (audio.paused) {
-      await audio.play();
-      text.textContent = "Pausar";
-      toggle.classList.add("playing");
-    } else {
-      audio.pause();
-      text.textContent = "Som";
-      toggle.classList.remove("playing");
-    }
-  } catch {
-    text.textContent = "Adiciona musica.mp3";
+
+toggle.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play()
+      .then(() => {
+        text.textContent = "Pausar";
+        toggle.classList.add("playing");
+      })
+      .catch((error) => {
+        console.error("Erro ao tocar música:", error);
+        text.textContent = "Erro";
+      });
+  } else {
+    audio.pause();
+    text.textContent = "Som";
+    toggle.classList.remove("playing");
   }
 });
